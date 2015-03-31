@@ -1,6 +1,6 @@
 # Intro to Phishing: Attack and Defense
 ## Topic
-Phishing is one of the few attack vectors that has become more popular over time, even today large campaigns are carried out against the general public and spear phishing attacks are targeting specific corporations. This week we will be looking at examples of past attacks, the different stages of the phishing process and how you can defend your company or family and friends against attacks. There will be a demo of a credential harvesting attack using "Morning Catch", you can follow along during the talk by setting up the VM environment detailed here: 
+Phishing is one of the few attack vectors that has become more popular over time, even today large campaigns are carried out against the general public and spear phishing attacks are targeting specific corporations. This week we will be looking at examples of past attacks, the different stages of the phishing process and how you can defend your company or family and friends against attacks. There will be a demo of a credential harvesting attack using "Morning Catch", you can follow along during the talk by setting up the VM environment detailed here: https://github.com/dc865/presentations/blob/master/intro-to-phishing/README.md
 
 ## Demo Environment
 
